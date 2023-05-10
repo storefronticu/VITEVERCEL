@@ -13,6 +13,18 @@ const { imagemin } = config
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    port: 4242,
+    proxy: {
+      // string shorthand
+      // with options
+      '/api': {
+        target: 'http://localhost:5252',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '')
+      }
+    }
+  },
   plugins: [
     react(),
     viteImagemin(imagemin),

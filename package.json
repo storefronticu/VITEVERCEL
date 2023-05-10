@@ -25,9 +25,19 @@
     "not IE 11"
   ],
   "dependencies": {
+    "@stripe/react-stripe-js": "^1.8.1",
+    "@stripe/stripe-js": "^1.31.0",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "fastify": "^4.0.2",
+    "stripe": "^9.8.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0"
+  },
+  "engines": {
+    "node": "^16.x",
+    "npm": "^7.x"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.18.2",
@@ -56,6 +66,7 @@
     "eslint-plugin-tailwindcss": "^3.6.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
+    "concurrently": "^7.2.2",
     "postcss": "^8.4.14",
     "prettier": "2.7.1",
     "rimraf": "^3.0.2",
