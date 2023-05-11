@@ -6,7 +6,7 @@
   },
   "private": true,
   "version": "0.0.0",
-  "type":"commonjs",
+  "type": "commonjs",
   "scripts": {
     "start": "npm run development",
     "development": "node_env=development concurrently --kill-others \"npm run client\" \"npm run server\"",
@@ -28,15 +28,18 @@
     "not IE 11"
   ],
   "dependencies": {
-    "@stripe/react-stripe-js": "^1.8.1",
-    "@stripe/stripe-js": "^1.31.0",
+    "@headlessui/react": "^1.7.14",
+    "@heroicons/react": "^2.0.18",
+    "@stripe/react-stripe-js": "^1.16.5",
+    "@stripe/stripe-js": "1.11.0",
+    "@tailwindcss/forms": "^0.5.3",
     "axios": "^0.27.2",
     "dotenv": "^16.0.1",
     "fastify": "^4.0.2",
-    "stripe": "^9.8.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "stripe": "^9.8.0"
   },
   "engines": {
     "node": "^16.x",
@@ -56,6 +59,7 @@
     "@vitejs/plugin-react": "^1.3.0",
     "autoprefixer": "^10.4.7",
     "commitlint-config-gitmoji": "^2.2.5",
+    "concurrently": "^7.2.2",
     "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
@@ -69,7 +73,6 @@
     "eslint-plugin-tailwindcss": "^3.6.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
-    "concurrently": "^7.2.2",
     "postcss": "^8.4.14",
     "prettier": "2.7.1",
     "rimraf": "^3.0.2",
@@ -83,6 +86,6 @@
     "vite": "^3.0.2",
     "vite-plugin-fonts": "^0.6.0",
     "vite-plugin-html": "^3.2.0",
-    "vite-plugin-imagemin": "^0.6.1"
+    "vite-plugin-imagemin": "^0.1.0"
   }
 }
