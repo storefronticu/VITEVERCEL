@@ -2,7 +2,7 @@ import { CheckCircleIcon } from '@heroicons/react/20/solid'
 
 const tiers = [
   {
-    // name: 'Basic',
+    buttonName: 'ORDER DELIVERY',
     id: 'tier-basic',
     href: '#',
     price: { monthly: 'Nando’s Delivery' },
@@ -16,7 +16,7 @@ const tiers = [
     // ]
   },
   {
-    // name: 'Essential',
+    buttonName: 'ORDER COLLECT',
     id: 'tier-essential',
     href: '#',
     price: { monthly: 'Order for Collect' },
@@ -30,7 +30,7 @@ const tiers = [
     // ]
   },
   {
-    // name: 'Growth',
+    buttonName: 'FIND RESTAURANT',
     id: 'tier-growth',
     href: '#',
     price: {
@@ -72,7 +72,7 @@ export default function DiningOptions() {
                   aria-describedby={tier.id}
                   className="mt-10 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Buy plan
+                  {tier.buttonName}
                 </a>
                 <p className="mt-10 text-sm font-semibold leading-6 text-gray-900">
                   {tier.description}

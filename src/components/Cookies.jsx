@@ -2,20 +2,46 @@ import { Fragment, useState, React } from 'react'
 import { Transition } from '@headlessui/react'
 import { InboxIcon } from '@heroicons/react/24/outline'
 import { XMarkIcon } from '@heroicons/react/20/solid'
-
+import Footer from './Footer'
+import Header from './Header'
 export default function Cookies() {
   const [show, setShow] = useState(true)
 
   return (
     <>
+      <div className="pointer-events-none fixed inset-x-0 bottom-0 px-6 pb-6">
+        <div className="pointer-events-auto max-w-xl rounded-xl bg-white p-6 shadow-lg ring-1 ring-gray-900/10">
+          <p className="text-sm leading-6 text-gray-900">
+            This website uses cookies to supplement a balanced diet and provide a much deserved
+            reward to the senses after consuming bland but nutritious meals. Accepting our cookies
+            is optional but recommended, as they are delicious. See our{' '}
+            <a href="#" className="font-semibold text-indigo-600">
+              cookie policy
+            </a>
+            .
+          </p>
+          <div className="mt-4 flex items-center gap-x-5">
+            <button
+              type="button"
+              className="rounded-md bg-gray-900 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+            >
+              Accept all
+            </button>
+            <button type="button" className="text-sm font-semibold leading-6 text-gray-900">
+              Reject all
+            </button>
+          </div>
+        </div>
+      </div>
+
       {/* Global notification live region, render this permanently at the end of the document */}
-      <div
+      {/* <div
         aria-live="assertive"
         className="pointer-events-none fixed bottom-0 inset-0 flex items-end px-4 py-6 sm:items-end sm:p-6"
       >
         <div className="flex w-full flex-col items-center space-y-4 sm:items-end">
           {/* Notification panel, dynamically insert this into the live region when it needs to be displayed */}
-          <Transition
+      {/* <Transition
             show={show}
             as={Fragment}
             enter="transform ease-out duration-300 transition"
@@ -77,9 +103,9 @@ export default function Cookies() {
                 </div>
               </div>
             </div>
-          </Transition>
-        </div>
-      </div>
+          </Transition> */}
+      {/* </div>
+      </div> */}
     </>
   )
 }

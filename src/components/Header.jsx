@@ -48,7 +48,7 @@
 //             href="#"
 //             className="hidden lg:block lg:text-sm lg:font-semibold lg:leading-6 lg:text-gray-900"
 //           >
-//             Log in
+//
 //           </a>
 //           <a
 //             href="#"
@@ -113,7 +113,7 @@
 //                   href="#"
 //                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
 //                 >
-//                   Log in
+//
 //                 </a>
 //               </div>
 //             </div>
@@ -218,7 +218,7 @@ export default function Header() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <Popover className="relative">
+          {/* <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
               MENU
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
@@ -270,22 +270,43 @@ export default function Header() {
                 </div>
               </Popover.Panel>
             </Transition>
-          </Popover>
+          </Popover> */}
+
+          <a href="/menu" className="text-sm font-semibold leading-6 text-gray-900">
+            MENU
+          </a>
 
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Features
+            RESTAURANTS
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          {/* <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Marketplace
+          </a> */}
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            NANDOS REWARDS
           </a>
-
-          <Popover className="relative">
+          {/* <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            COOK
+          </a> */}
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            SHOP
+          </a>
+          <a href="/about" className="text-sm font-semibold leading-6 text-gray-900">
+            ABOUT US
+          </a>
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            HELP
+          </a>
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            CAREERS
+          </a>
+          {/* <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
               Company
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-            </Popover.Button>
+            </Popover.Button> */}
 
-            <Transition
+          {/* <Transition
               as={Fragment}
               enter="transition ease-out duration-200"
               enterFrom="opacity-0 translate-y-1"
@@ -305,8 +326,8 @@ export default function Header() {
                   </a>
                 ))}
               </Popover.Panel>
-            </Transition>
-          </Popover>
+            </Transition> */}
+          {/* </Popover> */}
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
